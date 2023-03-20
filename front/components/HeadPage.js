@@ -5,7 +5,7 @@ import Head from 'next/head'
 export default function HeadPage() {
   return (
     <Head>
-    <title> aidPet </title>
+    <title> Matemática de apoyo </title>
     <link rel="icon" href="/favicon.ico" />
     </Head>
   )
