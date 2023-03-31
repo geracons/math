@@ -4,23 +4,31 @@ export default function Collage() {
   return (
     <div>
 
-<div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8 mt-2">
-  <div>
-    <img src="/assets/11.jpg" alt="" loading="lazy" />
-  </div>
-  <div className="col-start-3">
-    <img src="/assets/55.jpg" alt="" loading="lazy" />
-  </div>
-  <div>
-    <img src="/assets/33.jpg" alt="" loading="lazy" />
-  </div>
-  <div>
-    <img src="/assets/44.jpg" alt="" loading="lazy" />
-  </div>
-  <div className="row-start-1 col-start-2 col-span-2">
-    <img src="/assets/22.jpg" alt="" loading="lazy" />
+<div className="sidebar">
+  <div className="logo">Awesome<span>Portfolio</span></div>
+  <nav>
+    <a href="" className="nav-item">Home</a>
+    <a href="" className="nav-item">About</a>
+    <a href="" className="nav-item active">Portfolio</a>
+    <a href="" className="nav-item">Contact</a>
+  </nav>
+</div>
+
+<div className="main-content">
+  <div className="portfolio">
+    <div className="portfolio-item medium">one</div>
+    <div className="portfolio-item large two">two</div>
+    <div className="portfolio-item medium">three</div>
+    <div className="portfolio-item small">four</div>
+    <div className="portfolio-item tall">five</div>
+    <div className="portfolio-item wide">six</div>
+    <div className="portfolio-item wide">six</div>
+    <div className="portfolio-item medium">one</div>
   </div>
 </div>
+
+
+
 
 
 

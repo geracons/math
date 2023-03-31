@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import {gsap, Power3} from 'gsap'
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export default function Navbar() {
 
   let navbarSection = useRef(null)
@@ -12,20 +12,11 @@ export default function Navbar() {
 */
   return (
     <div className="">
-      <div className="w-100 h-0">
+      <div className="w-100 h-16 bg-pink items-center">
+       <p className=" text-right text-white text-[28px] relative top-3 right-3"><a href="https://wa.me/34602661162" target="_blank">Contáctanos <WhatsAppIcon fontSize="28px" className="-mt-1"/></a></p>
+       <img src="/assets/logo.png" alt="logo" className=" w-60   absolute top-10 left-14   hidden md:block"/> 
        
-       <img src="/assets/logo.png" alt="logo" className=" w-20 ml-10 mt-2 absolute md:mt-0 md:w-40 md:pl-3 lg:w-60 lg:pl-3 hidden md:block"/> 
-        <ul className="text-base text-center pt-4  md:float-right md:mr-5 md:mt-6 " >
-          <a href="#">
-            <li className=" bg-pink  rounded-2xl p-2 inline-block m-2 text-white lg:p-2 lg:text-[22px] xl:p-6 xl:text-[26px]" >CLASES</li>
-          </a>
-          <a href="#">
-            <li className=" bg-pink rounded-2xl p-2 m-2 inline-block text-white lg:p-2 lg:text-[22px] xl:p-6 xl:text-[26px]">PRECIO</li>
-          </a>
-          <a href="#">
-            <li className=" bg-pink rounded-2xl p-2 m-2 inline-block text-white lg:p-2 lg:text-[22px] xl:p-6 xl:text-[26px]">CONTACTO</li>
-          </a>
-        </ul>
+        
       </div>
     </div>
   );

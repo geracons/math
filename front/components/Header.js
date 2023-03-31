@@ -1,16 +1,38 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { motion } from 'framer-motion';
 export default function Header() {
   return (
-    <div className="h-screen  md:bg-cover bg-fixed md:bg-[url('/img/fondo_principal.jpg')]">
-      <div className="absolute md:hidden">
-        <img src="/assets/logo.png" alt="logo" className="relative mt-10 pt-28 pl-28 pr-28 pb-0" />
-        <div className="  text-center "> <span className='rounded-2xl bg-pink p-2 text-white'> Whats  +34 602661162    </span></div>
+    <div className="h-screen bg-fixed lg:bg-cover bg-[url('/assets/mobilefondo.png')] md:bg-[url('/assets/fondito.jpg')] ">
+      <div className='hidden lg:block'>
+      <p className='absolute lg:mt-36 lg:top-56 lg:left-80 text-[82px] font-bold'>INSTITUTO DE</p>
+      <p className='absolute lg:mt-48 lg:top-60  lg:left-80 lg:ml-10 text-[82px] font-bold'>MATEMATICA</p>
+      <p className='absolute lg:mt-60 lg:top-64  lg:left-60 text-[82px] font-bold'>Y ESTADISTICA</p>
       </div>
+    <div className="absolute md:hidden">
+      <img src="/assets/logo.png" alt="logo" className="relative pl-12 pr-12 pb-0 " />
 
+        <div className="  text-center mt-0 mr-24 ml-24"> 
+          <Typography className='rounded-2xl bg-pink p-2 mb-2 text-white text-[26px]'> Matemática    </Typography>
+          <Typography className='rounded-2xl bg-pink p-2 mb-2 text-white text-[26px]'> Estadística   </Typography>
+          <Typography className='rounded-2xl bg-pink p-2 mb-2  text-white text-[26px]'> Álgebra    </Typography>
+          <Typography className='rounded-2xl bg-pink p-2 mb-2 text-white text-[26px]'> Cálculo    </Typography>
+        </div>
+        
+        <motion.div
+  initial={{ scale: 0 }}
+  animate={{ rotate: 180, scale: 1 }}
+  transition={{
+    type: "spring",
+    stiffness: 260,
+    damping: 20
+  }}
+/>
+        <div className='text-center '><ExpandMoreIcon className='text-[60px] text-pink mt-48'  /></div>
     </div>
+
+  </div>
 
   )
 }

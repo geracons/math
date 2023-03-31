@@ -4,7 +4,8 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Cards from '../components/Cards'
 import Collage from '../components/Collage'
-
+import Service from '../components/Service'
+import Pricing from '../components/Pricing'
 
 export default function Home() {
   return (
@@ -12,8 +13,7 @@ export default function Home() {
       <HeadPage />
       <Navbar />
       <Header />
-      {/*<Collage />*/}
-      <Cards />
+      <Pricing />
       <Footer />
   
     </>
