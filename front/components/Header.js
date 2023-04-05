@@ -13,13 +13,7 @@ export default function Header() {
     <div className="absolute md:hidden">
       <img src="/assets/logo.png" alt="logo" className="relative pl-12 pr-12 pb-0 " />
 
-        <div className="  text-center mt-0 mr-24 ml-24"> 
-          <Typography className='rounded-2xl bg-pink p-2 mb-8 text-white text-[26px]'> Matemática    </Typography>
-          <Typography className='rounded-2xl bg-pink p-2 mb-8 text-white text-[26px]'> Estadística   </Typography>
-          <Typography className='rounded-2xl bg-pink p-2 mb-8  text-white text-[26px]'> Álgebra    </Typography>
-          <Typography className='rounded-2xl bg-pink p-2 mb-8 text-white text-[26px]'> Cálculo    </Typography>
-        </div>
-        
+       
         <motion.div
   initial={{ scale: 0 }}
   animate={{ rotate: 180, scale: 1 }}
